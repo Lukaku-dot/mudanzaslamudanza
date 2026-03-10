@@ -10,40 +10,10 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    name: "Martín G.",
-    text: "Excelente servicio. Llegaron puntual, muy cuidadosos con los muebles y super amables. Los recomiendo al 100%.",
+    name: "German Retta",
+    text: "Excelente servicio, embalaron todo con mantas y film, muy respetuosos y eficientes, desarmaron embalaron y cargaron con una gran rapidez, lo mismo en la descarga. Muchas gracias.",
     rating: 5,
-    date: "Hace 2 semanas",
-  },
-  {
-    name: "Carolina S.",
-    text: "La mejor empresa de mudanzas que contraté. Muy profesionales, rápidos y cuidaron cada detalle. Impecables.",
-    rating: 5,
-    date: "Hace 1 mes",
-  },
-  {
-    name: "Roberto L.",
-    text: "Mudanza de oficina sin ningún problema. Coordinaron todo perfectamente y no se rompió nada. Muy recomendables.",
-    rating: 5,
-    date: "Hace 1 mes",
-  },
-  {
-    name: "Florencia M.",
-    text: "Contraté el servicio completo con embalaje. Increíble lo prolijos que son. Precio justo por un servicio de primera.",
-    rating: 5,
-    date: "Hace 2 meses",
-  },
-  {
-    name: "Diego P.",
-    text: "Ya es la tercera vez que los contrato. Siempre cumplen, siempre puntuales, siempre amables. Son los mejores.",
-    rating: 5,
-    date: "Hace 3 meses",
-  },
-  {
-    name: "Laura V.",
-    text: "Me mudé al interior y estaba preocupada, pero todo llegó perfecto. Seguimiento constante y muy buena comunicación.",
-    rating: 5,
-    date: "Hace 3 meses",
+    date: "2017",
   },
 ];
 
