@@ -21,17 +21,20 @@ const Testimonials = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
+    if (reviews.length <= 1) return;
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % reviews.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
-  const visibleReviews = [
-    reviews[current],
-    reviews[(current + 1) % reviews.length],
-    reviews[(current + 2) % reviews.length],
-  ];
+  const visibleReviews = reviews.length >= 3
+    ? [
+        reviews[current],
+        reviews[(current + 1) % reviews.length],
+        reviews[(current + 2) % reviews.length],
+      ]
+    : reviews;
 
   return (
     <section id="testimonios" className="py-20 md:py-28 bg-secondary">
@@ -51,12 +54,12 @@ const Testimonials = () => {
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-6 h-6 fill-primary text-primary" />
             ))}
-             <span className="ml-2 text-foreground font-semibold">5.0</span>
+            <span className="ml-2 text-foreground font-semibold">5.0</span>
             <span className="text-muted-foreground ml-1">en Google</span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className={`grid gap-6 ${visibleReviews.length === 1 ? 'max-w-xl mx-auto' : 'md:grid-cols-3'}`}>
           {visibleReviews.map((review, idx) => (
             <div
               key={`${review.name}-${idx}`}
@@ -89,19 +92,20 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Dots indicator */}
-        <div className="flex justify-center gap-2 mt-8">
-          {reviews.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrent(idx)}
-              className={`w-2.5 h-2.5 rounded-full transition-all ${
-                idx === current ? "bg-primary w-8" : "bg-muted-foreground/30"
-              }`}
-              aria-label={`Ver reseña ${idx + 1}`}
-            />
-          ))}
-        </div>
+        {reviews.length > 1 && (
+          <div className="flex justify-center gap-2 mt-8">
+            {reviews.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrent(idx)}
+                className={`w-2.5 h-2.5 rounded-full transition-all ${
+                  idx === current ? "bg-primary w-8" : "bg-muted-foreground/30"
+                }`}
+                aria-label={`Ver reseña ${idx + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
