@@ -59,7 +59,7 @@ const Hero = () => {
               <p className="text-sm mt-1">Años de experiencia</p>
             </div>
             <div>
-              <span className="text-3xl font-display text-primary">⭐ 4.8</span>
+              <span className="text-3xl font-display text-primary">⭐ 5.0</span>
               <p className="text-sm mt-1">Calificación Google</p>
             </div>
           </div>

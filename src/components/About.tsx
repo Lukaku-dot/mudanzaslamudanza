@@ -50,14 +50,6 @@ const About = () => {
                 <span className="text-4xl md:text-5xl font-display text-gradient-brand">20+</span>
                 <p className="text-muted-foreground mt-2">Años</p>
               </div>
-              <div className="text-center">
-                <span className="text-4xl md:text-5xl font-display text-gradient-brand">50+</span>
-                <p className="text-muted-foreground mt-2">Empleados</p>
-              </div>
-              <div className="text-center">
-                <span className="text-4xl md:text-5xl font-display text-gradient-brand">15</span>
-                <p className="text-muted-foreground mt-2">Camiones</p>
-              </div>
             </div>
             <div className="mt-8 pt-8 border-t border-border text-center">
               <p className="text-muted-foreground italic">
