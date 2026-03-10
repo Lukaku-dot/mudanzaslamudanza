@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
           <h1 className="font-display text-4xl sm:text-5xl md:text-7xl leading-tight mb-6 animate-slide-up">
             Tu mudanza,{" "}
-            <span className="text-gradient-brand">nuestra pasión</span>
+            <span className="text-gradient-brand">nuestra misión</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Más de 20 años de experiencia trasladando hogares y empresas con cuidado, eficiencia y puntualidad en todo Buenos Aires.
@@ -59,7 +59,7 @@ const Hero = () => {
               <p className="text-sm mt-1">Años de experiencia</p>
             </div>
             <div>
-              <span className="text-3xl font-display text-primary">⭐ 4.8</span>
+              <span className="text-3xl font-display text-primary">⭐ 5.0</span>
               <p className="text-sm mt-1">Calificación Google</p>
             </div>
           </div>

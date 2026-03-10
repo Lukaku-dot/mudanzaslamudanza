@@ -10,40 +10,10 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    name: "Martín G.",
-    text: "Excelente servicio. Llegaron puntual, muy cuidadosos con los muebles y super amables. Los recomiendo al 100%.",
+    name: "German Retta",
+    text: "Excelente servicio, embalaron todo con mantas y film, muy respetuosos y eficientes, desarmaron embalaron y cargaron con una gran rapidez, lo mismo en la descarga. Muchas gracias.",
     rating: 5,
-    date: "Hace 2 semanas",
-  },
-  {
-    name: "Carolina S.",
-    text: "La mejor empresa de mudanzas que contraté. Muy profesionales, rápidos y cuidaron cada detalle. Impecables.",
-    rating: 5,
-    date: "Hace 1 mes",
-  },
-  {
-    name: "Roberto L.",
-    text: "Mudanza de oficina sin ningún problema. Coordinaron todo perfectamente y no se rompió nada. Muy recomendables.",
-    rating: 5,
-    date: "Hace 1 mes",
-  },
-  {
-    name: "Florencia M.",
-    text: "Contraté el servicio completo con embalaje. Increíble lo prolijos que son. Precio justo por un servicio de primera.",
-    rating: 5,
-    date: "Hace 2 meses",
-  },
-  {
-    name: "Diego P.",
-    text: "Ya es la tercera vez que los contrato. Siempre cumplen, siempre puntuales, siempre amables. Son los mejores.",
-    rating: 5,
-    date: "Hace 3 meses",
-  },
-  {
-    name: "Laura V.",
-    text: "Me mudé al interior y estaba preocupada, pero todo llegó perfecto. Seguimiento constante y muy buena comunicación.",
-    rating: 5,
-    date: "Hace 3 meses",
+    date: "2017",
   },
 ];
 
@@ -51,17 +21,20 @@ const Testimonials = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
+    if (reviews.length <= 1) return;
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % reviews.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
-  const visibleReviews = [
-    reviews[current],
-    reviews[(current + 1) % reviews.length],
-    reviews[(current + 2) % reviews.length],
-  ];
+  const visibleReviews = reviews.length >= 3
+    ? [
+        reviews[current],
+        reviews[(current + 1) % reviews.length],
+        reviews[(current + 2) % reviews.length],
+      ]
+    : reviews;
 
   return (
     <section id="testimonios" className="py-20 md:py-28 bg-secondary">
@@ -81,12 +54,12 @@ const Testimonials = () => {
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-6 h-6 fill-primary text-primary" />
             ))}
-            <span className="ml-2 text-foreground font-semibold">4.8</span>
+            <span className="ml-2 text-foreground font-semibold">5.0</span>
             <span className="text-muted-foreground ml-1">en Google</span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className={`grid gap-6 ${visibleReviews.length === 1 ? 'max-w-xl mx-auto' : 'md:grid-cols-3'}`}>
           {visibleReviews.map((review, idx) => (
             <div
               key={`${review.name}-${idx}`}
@@ -119,19 +92,20 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Dots indicator */}
-        <div className="flex justify-center gap-2 mt-8">
-          {reviews.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrent(idx)}
-              className={`w-2.5 h-2.5 rounded-full transition-all ${
-                idx === current ? "bg-primary w-8" : "bg-muted-foreground/30"
-              }`}
-              aria-label={`Ver reseña ${idx + 1}`}
-            />
-          ))}
-        </div>
+        {reviews.length > 1 && (
+          <div className="flex justify-center gap-2 mt-8">
+            {reviews.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrent(idx)}
+                className={`w-2.5 h-2.5 rounded-full transition-all ${
+                  idx === current ? "bg-primary w-8" : "bg-muted-foreground/30"
+                }`}
+                aria-label={`Ver reseña ${idx + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
