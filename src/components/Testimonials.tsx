@@ -10,6 +10,42 @@ interface Review {
 
 const reviews: Review[] = [
   {
+    name: "Esteban Bruel",
+    text: "Una maravilla todo, desde el primer contacto para presupuesto, puntualidad, y los muchachos muy bien en todo aspecto, recomendable 100%.",
+    rating: 5,
+    date: "Hace un año",
+  },
+  {
+    name: "Edinstitucionales",
+    text: "Muy conforme con la profesionalidad en el desempeño de la mudanza de todo el personal, destacando a cada uno de ellos, Daniel impecable organizando todo, acompañado por cada uno de los señores que ayudaron.",
+    rating: 5,
+    date: "Hace un año",
+  },
+  {
+    name: "Monica Luppi",
+    text: "Excelente servicio. Muy buena organización de todo el equipo. Tanto en el cuidado de los muebles, como de los ascensores, para no dejar al resto de los vecinos sin los mismos. Muy amables y dispuestos. Los recomiendo!",
+    rating: 5,
+    date: "Hace 3 meses",
+  },
+  {
+    name: "Guillermo Rodrigo",
+    text: "Muy atentos, tanto el chofer como los dos operarios. Un par de muebles pesados los levantaron con sogas para no rayar el piso. Precio razonable. Un detalle no menor para destacar, la puntualidad.",
+    rating: 5,
+    date: "Hace 2 años",
+  },
+  {
+    name: "Patricio Euillades",
+    text: "Impecable, desde la atención telefónica de Romina, cotización y cumplimiento. Super puntuales y atentos. Siempre se mantuvieron en contacto. Peones y empleados profesionales y atentos a los detalles.",
+    rating: 5,
+    date: "Hace 5 años",
+  },
+  {
+    name: "Juliana Galarza",
+    text: "Excelente servicio, super profesionales. Se encargan de todo. Muy buena onda y serviciales. Lo mejor: puntuales y rápidos.",
+    rating: 5,
+    date: "Hace 4 años",
+  },
+  {
     name: "German Retta",
     text: "Excelente servicio, embalaron todo con mantas y film, muy respetuosos y eficientes, desarmaron embalaron y cargaron con una gran rapidez, lo mismo en la descarga. Muchas gracias.",
     rating: 5,
