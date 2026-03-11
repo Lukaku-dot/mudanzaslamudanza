@@ -8,6 +8,10 @@ const QuoteForm = () => {
     email: "",
     origen: "",
     destino: "",
+    tipoViviendaOrigen: "departamento",
+    pisoOrigen: "",
+    tipoViviendaDestino: "departamento",
+    pisoDestino: "",
     fecha: "",
     detalles: "",
   });
@@ -15,8 +19,15 @@ const QuoteForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Build WhatsApp message
-    const msg = `Hola! Quiero cotizar una mudanza:%0A- Nombre: ${formData.nombre}%0A- Tel: ${formData.telefono}%0A- Origen: ${formData.origen}%0A- Destino: ${formData.destino}%0A- Fecha: ${formData.fecha}%0A- Detalles: ${formData.detalles}`;
+    const origenInfo = formData.tipoViviendaOrigen === "casa"
+      ? "Casa"
+      : `Depto piso ${formData.pisoOrigen || "N/A"}`;
+    const destinoInfo = formData.tipoViviendaDestino === "casa"
+      ? "Casa"
+      : `Depto piso ${formData.pisoDestino || "N/A"}`;
+    const msg = encodeURIComponent(
+      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
+    );
     window.open(`https://wa.me/541125535500?text=${msg}`, "_blank");
     setSubmitted(true);
   };
