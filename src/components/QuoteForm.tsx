@@ -109,8 +109,8 @@ const QuoteForm = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
               >
-                <div className="w-12 h-12 bg-gradient-brand rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-primary-foreground" />
+                <div className="w-12 h-12 bg-[#25D366] rounded-lg flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <p className="font-semibold">WhatsApp</p>
@@ -158,9 +158,10 @@ const QuoteForm = () => {
                 placeholder="tu@email.com"
               />
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            {/* Origen */}
+            <div className="space-y-3">
               <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Origen</label>
+                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Dirección de origen</label>
                 <input
                   type="text"
                   name="origen"
@@ -171,34 +172,38 @@ const QuoteForm = () => {
                   placeholder="Dirección de origen"
                 />
               </div>
-              <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo de vivienda (origen)</label>
-                <div className="flex gap-2">
+              <div className="flex gap-3">
+                <div className="flex-1">
+                  <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo</label>
                   <select
                     name="tipoViviendaOrigen"
                     value={formData.tipoViviendaOrigen}
                     onChange={handleChange}
-                    className="flex-1 bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   >
                     <option value="departamento">Departamento</option>
                     <option value="casa">Casa</option>
                   </select>
-                  {formData.tipoViviendaOrigen === "departamento" && (
+                </div>
+                {formData.tipoViviendaOrigen === "departamento" && (
+                  <div className="w-24">
+                    <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Piso</label>
                     <input
                       type="text"
                       name="pisoOrigen"
                       value={formData.pisoOrigen}
                       onChange={handleChange}
-                      className="w-24 bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                      placeholder="Piso"
+                      className="w-full bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Ej: 4"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            {/* Destino */}
+            <div className="space-y-3">
               <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Destino</label>
+                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Dirección de destino</label>
                 <input
                   type="text"
                   name="destino"
@@ -209,29 +214,32 @@ const QuoteForm = () => {
                   placeholder="Dirección de destino"
                 />
               </div>
-              <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo de vivienda (destino)</label>
-                <div className="flex gap-2">
+              <div className="flex gap-3">
+                <div className="flex-1">
+                  <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo</label>
                   <select
                     name="tipoViviendaDestino"
                     value={formData.tipoViviendaDestino}
                     onChange={handleChange}
-                    className="flex-1 bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   >
                     <option value="departamento">Departamento</option>
                     <option value="casa">Casa</option>
                   </select>
-                  {formData.tipoViviendaDestino === "departamento" && (
+                </div>
+                {formData.tipoViviendaDestino === "departamento" && (
+                  <div className="w-24">
+                    <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Piso</label>
                     <input
                       type="text"
                       name="pisoDestino"
                       value={formData.pisoDestino}
                       onChange={handleChange}
-                      className="w-24 bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                      placeholder="Piso"
+                      className="w-full bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Ej: 4"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
             <div>
