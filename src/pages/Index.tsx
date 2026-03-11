@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import QuoteForm from "@/components/QuoteForm";
+import CoverageArea from "@/components/CoverageArea";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -19,6 +20,7 @@ const Index = () => {
         <Testimonials />
         <CTASection />
         <QuoteForm />
+        <CoverageArea />
       </main>
       <Footer />
       <WhatsAppButton />

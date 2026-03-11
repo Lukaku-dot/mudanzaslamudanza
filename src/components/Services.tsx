@@ -41,7 +41,7 @@ const Services = () => {
           <p className="text-primary font-semibold uppercase tracking-[0.3em] text-sm mb-3">
             Nuestros Servicios
           </p>
-          <h2 className="font-display text-3xl md:text-5xl mb-4">
+          <h2 className="font-display text-3xl md:text-5xl mb-4" id="servicios-titulo">
             Todo lo que necesitás para{" "}
             <span className="text-gradient-brand">tu mudanza</span>
           </h2>
@@ -59,7 +59,7 @@ const Services = () => {
               <div className="w-14 h-14 rounded-lg bg-gradient-brand flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <service.icon className="w-7 h-7 text-primary-foreground" />
               </div>
-              <h3 className="font-display text-xl mb-3">{service.title}</h3>
+              <h2 className="font-display text-xl mb-3">{service.title}</h2>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
