@@ -109,8 +109,8 @@ const QuoteForm = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
               >
-                <div className="w-12 h-12 bg-gradient-brand rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-primary-foreground" />
+                <div className="w-12 h-12 bg-[#25D366] rounded-lg flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <p className="font-semibold">WhatsApp</p>
