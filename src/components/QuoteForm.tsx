@@ -172,6 +172,32 @@ const QuoteForm = () => {
                 />
               </div>
               <div>
+                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo de vivienda (origen)</label>
+                <div className="flex gap-2">
+                  <select
+                    name="tipoViviendaOrigen"
+                    value={formData.tipoViviendaOrigen}
+                    onChange={handleChange}
+                    className="flex-1 bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  >
+                    <option value="departamento">Departamento</option>
+                    <option value="casa">Casa</option>
+                  </select>
+                  {formData.tipoViviendaOrigen === "departamento" && (
+                    <input
+                      type="text"
+                      name="pisoOrigen"
+                      value={formData.pisoOrigen}
+                      onChange={handleChange}
+                      className="w-24 bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Piso"
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
                 <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Destino</label>
                 <input
                   type="text"
@@ -182,6 +208,30 @@ const QuoteForm = () => {
                   className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   placeholder="Dirección de destino"
                 />
+              </div>
+              <div>
+                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo de vivienda (destino)</label>
+                <div className="flex gap-2">
+                  <select
+                    name="tipoViviendaDestino"
+                    value={formData.tipoViviendaDestino}
+                    onChange={handleChange}
+                    className="flex-1 bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  >
+                    <option value="departamento">Departamento</option>
+                    <option value="casa">Casa</option>
+                  </select>
+                  {formData.tipoViviendaDestino === "departamento" && (
+                    <input
+                      type="text"
+                      name="pisoDestino"
+                      value={formData.pisoDestino}
+                      onChange={handleChange}
+                      className="w-24 bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Piso"
+                    />
+                  )}
+                </div>
               </div>
             </div>
             <div>
