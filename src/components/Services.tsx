@@ -4,7 +4,7 @@ const services = [
   {
     icon: Truck,
     title: "Mudanzas Residenciales",
-    description: "Trasladamos tu hogar con el mayor cuidado. Embalaje, carga, transporte y descarga de todos tus muebles y pertenencias.",
+    description: "Traslados cuidadosos de casas y departamentos en Capital Federal. Contamos con personal para carga y descarga.",
   },
   {
     icon: Building2,
@@ -14,12 +14,12 @@ const services = [
   {
     icon: Package,
     title: "Embalaje Profesional",
-    description: "Servicio de embalaje completo con materiales de primera calidad para proteger cada objeto durante el traslado.",
+    description: "Protección total para tu vajilla y muebles con pluribol, cartón corrugado y canastos de mimbre.",
   },
   {
     icon: Shield,
-    title: "Seguro de Carga",
-    description: "Todas nuestras mudanzas incluyen seguro integral. Tu tranquilidad es nuestra prioridad.",
+    title: "Izajes",
+    description: "Especialistas en movimientos por balcón con sogas para muebles que no entran por ascensor.",
   },
   {
     icon: Clock,
