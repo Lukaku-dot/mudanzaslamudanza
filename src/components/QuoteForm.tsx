@@ -8,6 +8,10 @@ const QuoteForm = () => {
     email: "",
     origen: "",
     destino: "",
+    tipoViviendaOrigen: "departamento",
+    pisoOrigen: "",
+    tipoViviendaDestino: "departamento",
+    pisoDestino: "",
     fecha: "",
     detalles: "",
   });
@@ -15,13 +19,20 @@ const QuoteForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Build WhatsApp message
-    const msg = `Hola! Quiero cotizar una mudanza:%0A- Nombre: ${formData.nombre}%0A- Tel: ${formData.telefono}%0A- Origen: ${formData.origen}%0A- Destino: ${formData.destino}%0A- Fecha: ${formData.fecha}%0A- Detalles: ${formData.detalles}`;
+    const origenInfo = formData.tipoViviendaOrigen === "casa"
+      ? "Casa"
+      : `Depto piso ${formData.pisoOrigen || "N/A"}`;
+    const destinoInfo = formData.tipoViviendaDestino === "casa"
+      ? "Casa"
+      : `Depto piso ${formData.pisoDestino || "N/A"}`;
+    const msg = encodeURIComponent(
+      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
+    );
     window.open(`https://wa.me/541125535500?text=${msg}`, "_blank");
     setSubmitted(true);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -161,6 +172,32 @@ const QuoteForm = () => {
                 />
               </div>
               <div>
+                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo de vivienda (origen)</label>
+                <div className="flex gap-2">
+                  <select
+                    name="tipoViviendaOrigen"
+                    value={formData.tipoViviendaOrigen}
+                    onChange={handleChange}
+                    className="flex-1 bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  >
+                    <option value="departamento">Departamento</option>
+                    <option value="casa">Casa</option>
+                  </select>
+                  {formData.tipoViviendaOrigen === "departamento" && (
+                    <input
+                      type="text"
+                      name="pisoOrigen"
+                      value={formData.pisoOrigen}
+                      onChange={handleChange}
+                      className="w-24 bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Piso"
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
                 <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Destino</label>
                 <input
                   type="text"
@@ -171,6 +208,30 @@ const QuoteForm = () => {
                   className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   placeholder="Dirección de destino"
                 />
+              </div>
+              <div>
+                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Tipo de vivienda (destino)</label>
+                <div className="flex gap-2">
+                  <select
+                    name="tipoViviendaDestino"
+                    value={formData.tipoViviendaDestino}
+                    onChange={handleChange}
+                    className="flex-1 bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  >
+                    <option value="departamento">Departamento</option>
+                    <option value="casa">Casa</option>
+                  </select>
+                  {formData.tipoViviendaDestino === "departamento" && (
+                    <input
+                      type="text"
+                      name="pisoDestino"
+                      value={formData.pisoDestino}
+                      onChange={handleChange}
+                      className="w-24 bg-secondary border border-border rounded-lg px-3 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="Piso"
+                    />
+                  )}
+                </div>
               </div>
             </div>
             <div>
