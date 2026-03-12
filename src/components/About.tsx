@@ -23,7 +23,7 @@ const About = () => {
               <span className="text-gradient-brand">experiencia simple</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              En La Mudanza entendemos que cambiar de hogar o trasladar tu negocio es un momento importante. 
+              En Mudarme entendemos que cambiar de hogar o trasladar tu negocio es un momento importante. 
               Por eso nos encargamos de cada detalle: desde el embalaje profesional hasta la colocación 
               de tus muebles en el nuevo destino. Nuestro compromiso es brindarte un servicio confiable, 
               seguro y a un precio justo.

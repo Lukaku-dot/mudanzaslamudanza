@@ -31,6 +31,11 @@ const services = [
     title: "Mudanzas al Interior",
     description: "Realizamos mudanzas a todo el país. Larga distancia con seguimiento en tiempo real.",
   },
+  {
+    icon: Warehouse,
+    title: "Guardamuebles",
+    description: "Contamos con depósitos privados, limpios y vigilados las 24 hs para estadías cortas o largas. Ideal para mudanzas intermedias o falta de espacio.",
+  },
 ];
 
 const Services = () => {

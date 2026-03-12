@@ -27,7 +27,7 @@ const QuoteForm = () => {
       ? "Casa"
       : `Depto piso ${formData.pisoDestino || "N/A"}`;
     const msg = encodeURIComponent(
-      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
+      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Ascensor: ${formData.ascensor}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
     );
     window.open(`https://wa.me/541125535500?text=${msg}`, "_blank");
     setSubmitted(true);
