@@ -54,9 +54,6 @@ const CoverageArea = () => {
                   {barrio}
                 </span>
               ))}
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                + todos los barrios
-              </span>
             </div>
           </div>
 
