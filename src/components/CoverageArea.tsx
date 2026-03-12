@@ -2,6 +2,15 @@ import { MapPin } from "lucide-react";
 
 const barrios = [
   "Palermo", "Recoleta", "Belgrano", "Almagro", "Caballito", "Flores",
+  "Villa Crespo", "Núñez", "Colegiales", "Villa Urquiza", "Devoto",
+  "Villa del Parque", "Barracas", "La Boca", "San Telmo", "Monserrat",
+  "San Nicolás", "Retiro", "Puerto Madero", "Constitución", "Boedo",
+  "Parque Chacabuco", "Nueva Pompeya", "Mataderos", "Liniers",
+  "Villa Luro", "Floresta", "Monte Castro", "Vélez Sarsfield",
+  "Versalles", "Villa Real", "Villa Devoto", "Saavedra", "Coghlan",
+  "Chacarita", "Paternal", "Villa Ortúzar", "Agronomía", "Parque Chas",
+  "Villa Pueyrredón", "Villa Santa Rita", "Villa Mitre", "Parque Avellaneda",
+  "Parque Patricios", "Pompeya", "Villa Soldati", "Villa Lugano", "Villa Riachuelo",
 ];
 
 const zonas = [
