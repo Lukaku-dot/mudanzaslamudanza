@@ -6,6 +6,7 @@ const QuoteForm = () => {
     nombre: "",
     telefono: "",
     email: "",
+    ascensor: "",
     origen: "",
     destino: "",
     tipoViviendaOrigen: "departamento",
