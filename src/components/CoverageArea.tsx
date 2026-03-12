@@ -14,9 +14,9 @@ const barrios = [
 ];
 
 const zonas = [
-  { name: "Zona Norte", areas: "San Isidro, Vicente López, Tigre, San Fernando, Olivos" },
-  { name: "Zona Sur", areas: "Avellaneda, Lanús, Lomas de Zamora, Quilmes, Berazategui" },
-  { name: "Zona Oeste", areas: "Morón, Ituzaingó, Merlo, Moreno, La Matanza" },
+  { name: "Zona Norte", areas: "San Isidro, Vicente López, Tigre, San Fernando, Olivos, Martínez, Acassuso, Béccar, San Martín, José León Suárez, Don Torcuato, Pacheco, Pilar, Escobar" },
+  { name: "Zona Sur", areas: "Avellaneda, Lanús, Lomas de Zamora, Quilmes, Berazategui, Florencio Varela, Almirante Brown, Esteban Echeverría, Ezeiza, Presidente Perón, San Vicente, Adrogué, Banfield, Temperley, Sarandí, Wilde" },
+  { name: "Zona Oeste", areas: "Morón, Ituzaingó, Merlo, Moreno, La Matanza, Caseros, Tres de Febrero, Hurlingham, San Miguel, José C. Paz, Malvinas Argentinas, General Rodríguez, Luján, Ramos Mejía, Haedo, Ciudadela" },
 ];
 
 const CoverageArea = () => {
