@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <img src={logo} alt="La Mudanza - Mudanzas en CABA y Gran Buenos Aires" className="h-14 rounded mb-4" />
+            <img src={logo} alt="Mudarme - Mudanzas en CABA y Gran Buenos Aires" className="h-14 rounded-xl shadow-elevated mb-4" />
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Mudanzas profesionales en Buenos Aires. Más de 20 años brindando un servicio de excelencia.
+              Mudarme es una empresa familiar con más de 8 décadas de experiencia brindando servicios de mudanza de excelencia en Buenos Aires.
             </p>
           </div>
 
@@ -54,9 +54,9 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-primary" />
                 4637-5500
               </a>
-              <a href="mailto:info@lamudanza.com.ar" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+              <a href="mailto:info@mudarme.com.ar" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Mail className="w-4 h-4 text-primary" />
-                info@lamudanza.com.ar
+                info@mudarme.com.ar
               </a>
               <div className="flex items-center gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-muted-foreground text-sm">
-          <p>© {new Date().getFullYear()} La Mudanza. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Mudarme. Todos los derechos reservados. | mudarme.com.ar</p>
         </div>
       </div>
     </footer>

@@ -6,6 +6,7 @@ const QuoteForm = () => {
     nombre: "",
     telefono: "",
     email: "",
+    ascensor: "",
     origen: "",
     destino: "",
     tipoViviendaOrigen: "departamento",
@@ -26,7 +27,7 @@ const QuoteForm = () => {
       ? "Casa"
       : `Depto piso ${formData.pisoDestino || "N/A"}`;
     const msg = encodeURIComponent(
-      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
+      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Ascensor: ${formData.ascensor}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
     );
     window.open(`https://wa.me/541125535500?text=${msg}`, "_blank");
     setSubmitted(true);
@@ -157,6 +158,22 @@ const QuoteForm = () => {
                 className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                 placeholder="tu@email.com"
               />
+            </div>
+            <div>
+              <label className="text-sm font-medium text-foreground/80 mb-1.5 block">¿Hay ascensor disponible? *</label>
+              <select
+                name="ascensor"
+                required
+                value={formData.ascensor}
+                onChange={handleChange}
+                className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option value="" disabled>Seleccioná una opción</option>
+                <option value="si_ambos">Sí, en ambos lados</option>
+                <option value="solo_origen">Solo en origen</option>
+                <option value="solo_destino">Solo en destino</option>
+                <option value="no_escalera">No, por escalera</option>
+              </select>
             </div>
             {/* Origen */}
             <div className="space-y-3">
