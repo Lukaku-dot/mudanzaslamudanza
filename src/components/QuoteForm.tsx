@@ -159,6 +159,22 @@ const QuoteForm = () => {
                 placeholder="tu@email.com"
               />
             </div>
+            <div>
+              <label className="text-sm font-medium text-foreground/80 mb-1.5 block">¿Hay ascensor disponible? *</label>
+              <select
+                name="ascensor"
+                required
+                value={formData.ascensor}
+                onChange={handleChange}
+                className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option value="" disabled>Seleccioná una opción</option>
+                <option value="si_ambos">Sí, en ambos lados</option>
+                <option value="solo_origen">Solo en origen</option>
+                <option value="solo_destino">Solo en destino</option>
+                <option value="no_escalera">No, por escalera</option>
+              </select>
+            </div>
             {/* Origen */}
             <div className="space-y-3">
               <div>
