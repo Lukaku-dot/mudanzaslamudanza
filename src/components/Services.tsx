@@ -1,4 +1,4 @@
-import { Truck, Building2, Package, Shield, Clock, MapPin } from "lucide-react";
+import { Truck, Building2, Package, Shield, Clock, MapPin, Warehouse } from "lucide-react";
 
 const services = [
   {
