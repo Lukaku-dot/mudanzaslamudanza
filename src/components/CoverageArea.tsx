@@ -32,7 +32,7 @@ const CoverageArea = () => {
             <span className="text-gradient-brand">Cobertura</span>
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Realizamos mudanzas en todos los barrios de CABA (Palermo, Recoleta, Belgrano, Almagro, Caballito, Flores) y en toda la Zona Norte, Sur y Oeste del Gran Buenos Aires.
+            Realizamos mudanzas en todos los barrios de Capital Federal y en toda la Zona Norte, Sur y Oeste del Gran Buenos Aires.
           </p>
         </div>
 
