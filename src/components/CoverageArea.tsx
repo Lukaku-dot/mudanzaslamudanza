@@ -2,12 +2,21 @@ import { MapPin } from "lucide-react";
 
 const barrios = [
   "Palermo", "Recoleta", "Belgrano", "Almagro", "Caballito", "Flores",
+  "Villa Crespo", "Núñez", "Colegiales", "Villa Urquiza", "Devoto",
+  "Villa del Parque", "Barracas", "La Boca", "San Telmo", "Monserrat",
+  "San Nicolás", "Retiro", "Puerto Madero", "Constitución", "Boedo",
+  "Parque Chacabuco", "Nueva Pompeya", "Mataderos", "Liniers",
+  "Villa Luro", "Floresta", "Monte Castro", "Vélez Sarsfield",
+  "Versalles", "Villa Real", "Villa Devoto", "Saavedra", "Coghlan",
+  "Chacarita", "Paternal", "Villa Ortúzar", "Agronomía", "Parque Chas",
+  "Villa Pueyrredón", "Villa Santa Rita", "Villa Mitre", "Parque Avellaneda",
+  "Parque Patricios", "Pompeya", "Villa Soldati", "Villa Lugano", "Villa Riachuelo",
 ];
 
 const zonas = [
-  { name: "Zona Norte", areas: "San Isidro, Vicente López, Tigre, San Fernando, Olivos" },
-  { name: "Zona Sur", areas: "Avellaneda, Lanús, Lomas de Zamora, Quilmes, Berazategui" },
-  { name: "Zona Oeste", areas: "Morón, Ituzaingó, Merlo, Moreno, La Matanza" },
+  { name: "Zona Norte", areas: "San Isidro, Vicente López, Tigre, San Fernando, Olivos, Martínez, Acassuso, Béccar, San Martín, José León Suárez, Don Torcuato, Pacheco, Pilar, Escobar" },
+  { name: "Zona Sur", areas: "Avellaneda, Lanús, Lomas de Zamora, Quilmes, Berazategui, Florencio Varela, Almirante Brown, Esteban Echeverría, Ezeiza, Presidente Perón, San Vicente, Adrogué, Banfield, Temperley, Sarandí, Wilde" },
+  { name: "Zona Oeste", areas: "Morón, Ituzaingó, Merlo, Moreno, La Matanza, Caseros, Tres de Febrero, Hurlingham, San Miguel, José C. Paz, Malvinas Argentinas, General Rodríguez, Luján, Ramos Mejía, Haedo, Ciudadela" },
 ];
 
 const CoverageArea = () => {
@@ -23,7 +32,7 @@ const CoverageArea = () => {
             <span className="text-gradient-brand">Cobertura</span>
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Realizamos mudanzas en todos los barrios de CABA (Palermo, Recoleta, Belgrano, Almagro, Caballito, Flores) y en toda la Zona Norte, Sur y Oeste del Gran Buenos Aires.
+            Realizamos mudanzas en todos los barrios de Capital Federal y en toda la Zona Norte, Sur y Oeste del Gran Buenos Aires.
           </p>
         </div>
 
@@ -45,9 +54,6 @@ const CoverageArea = () => {
                   {barrio}
                 </span>
               ))}
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                + todos los barrios
-              </span>
             </div>
           </div>
 
