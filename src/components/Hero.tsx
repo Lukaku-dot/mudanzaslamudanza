@@ -22,8 +22,8 @@ const Hero = () => {
             Mudanzas profesionales
           </p>
           <h1 className="font-display text-4xl sm:text-5xl md:text-7xl leading-tight mb-6 animate-slide-up">
-            Mudanzas Profesionales en Buenos Aires:{" "}
-            <span className="text-gradient-brand">tu mudanza, nuestra misión</span>
+            Mudanzas Profesionales y Guardamuebles con{" "}
+            <span className="text-gradient-brand">20 años de trayectoria</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Más de 20 años de experiencia trasladando hogares y empresas con cuidado, eficiencia y puntualidad en Capital Federal y todo Buenos Aires.
