@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#inicio" className="flex items-center gap-3">
           <img src={logo} alt="Mudarme - Empresa de mudanzas profesionales en Buenos Aires" className="h-12 md:h-16 rounded-xl shadow-elevated" />
-          <span className="font-display text-xl md:text-2xl text-gradient-brand">Mudarme</span>
+          
         </a>
 
         {/* Desktop nav */}
