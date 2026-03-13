@@ -1,4 +1,4 @@
-import { Truck, Building2, Package, Shield, Clock, MapPin, Warehouse } from "lucide-react";
+import { Truck, Building2, Package, Shield, MapPin, Warehouse } from "lucide-react";
 
 const services = [
   {
@@ -20,11 +20,6 @@ const services = [
     icon: Shield,
     title: "Izajes",
     description: "Especialistas en movimientos por balcón con sogas para muebles que no entran por ascensor.",
-  },
-  {
-    icon: Clock,
-    title: "Mudanzas Express",
-    description: "¿Necesitás mudarte rápido? Ofrecemos servicio express con la misma calidad y cuidado de siempre.",
   },
   {
     icon: MapPin,
