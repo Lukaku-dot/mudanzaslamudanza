@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-muted-foreground text-sm">
-          <p>© {new Date().getFullYear()} Mudarme. Todos los derechos reservados. | mudarme.com.ar</p>
+          <p>© 2026 La Mudanza. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

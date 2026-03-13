@@ -59,8 +59,8 @@
     --shadow-brand: 0 8px 32px -8px hsla(25, 95%, 53%, 0.4);
     --shadow-elevated: 0 20px 60px -15px hsla(0, 0%, 0%, 0.6);
 
-    --font-display: 'Algerian', 'Playfair Display', serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
   }
 }
 

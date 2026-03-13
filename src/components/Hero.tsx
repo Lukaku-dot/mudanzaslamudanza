@@ -55,7 +55,7 @@ const Hero = () => {
               <p className="text-sm mt-1">Mudanzas realizadas</p>
             </div>
             <div>
-              <span className="text-3xl font-display text-primary">20+</span>
+              <span className="text-3xl font-display text-primary">30+</span>
               <p className="text-sm mt-1">Años de experiencia</p>
             </div>
             <div>
