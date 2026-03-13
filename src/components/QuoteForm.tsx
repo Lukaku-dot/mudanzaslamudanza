@@ -70,9 +70,6 @@ const QuoteForm = () => {
             <p className="text-primary font-semibold uppercase tracking-[0.3em] text-sm mb-3">
               Cotizá tu mudanza
             </p>
-            <p className="inline-block bg-primary/10 border border-primary/30 text-primary font-bold px-4 py-2 rounded-lg text-sm mb-4">
-              Presupuesto sin compromiso y sin cargo
-            </p>
             <h2 className="font-display text-3xl md:text-5xl mb-6">
               Pedí tu presupuesto{" "}
               <span className="text-gradient-brand">sin compromiso</span>
