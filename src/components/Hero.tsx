@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="text-gradient-brand">+30 años de trayectoria</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            Más de 20 años de experiencia trasladando hogares y empresas con cuidado, eficiencia y puntualidad en Capital Federal y todo Buenos Aires.
+            Más de 30 años de experiencia trasladando hogares y empresas con cuidado, eficiencia y puntualidad en Capital Federal y todo Buenos Aires. Presupuesto sin compromiso y sin cargo.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "0.4s" }}>
