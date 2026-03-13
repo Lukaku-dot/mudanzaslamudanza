@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
-  "Más de 20 años de trayectoria en el rubro",
+  "Más de 30 años de trayectoria en el rubro",
   "Personal capacitado y uniformado",
   "Flota propia de camiones equipados",
   "Seguro integral en todas las mudanzas",
