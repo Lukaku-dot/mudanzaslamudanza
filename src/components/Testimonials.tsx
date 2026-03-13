@@ -84,7 +84,7 @@ const Testimonials = () => {
             <span className="text-gradient-brand">nuestros clientes</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Reseñas reales de Google Maps · Mudarme
+            Reseñas reales de Google Maps · La Mudanza
           </p>
           <div className="flex items-center justify-center gap-1 mt-4">
             {[...Array(5)].map((_, i) => (

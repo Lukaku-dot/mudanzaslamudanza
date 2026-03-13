@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Camión de mudanza de Mudarme en Buenos Aires"
+          alt="Camión de mudanza de La Mudanza en Buenos Aires"
           className="w-full h-full object-cover rounded-b-3xl"
           loading="eager"
         />

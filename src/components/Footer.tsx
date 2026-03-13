@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <img src={logo} alt="Mudarme - Mudanzas en CABA y Gran Buenos Aires" className="h-14 rounded-xl shadow-elevated mb-4" />
+            <img src={logo} alt="La Mudanza - Mudanzas en CABA y Gran Buenos Aires" className="h-14 rounded-xl shadow-elevated mb-4" />
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Mudarme es una empresa familiar con más de 3 décadas de experiencia brindando servicios de mudanza de excelencia en Buenos Aires.
+              La Mudanza es una empresa familiar con más de 3 décadas de experiencia brindando servicios de mudanza de excelencia en Buenos Aires.
             </p>
           </div>
 
