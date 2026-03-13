@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <img src={logo} alt="Mudarme - Mudanzas en CABA y Gran Buenos Aires" className="h-14 rounded-xl shadow-elevated mb-4" />
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Mudarme es una empresa familiar con más de 8 décadas de experiencia brindando servicios de mudanza de excelencia en Buenos Aires.
+              Mudarme es una empresa familiar con más de 3 décadas de experiencia brindando servicios de mudanza de excelencia en Buenos Aires.
             </p>
           </div>
 
