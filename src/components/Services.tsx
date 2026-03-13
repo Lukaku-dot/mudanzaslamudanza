@@ -22,11 +22,6 @@ const services = [
     description: "Especialistas en movimientos por balcón con sogas para muebles que no entran por ascensor.",
   },
   {
-    icon: Clock,
-    title: "Mudanzas Express",
-    description: "¿Necesitás mudarte rápido? Ofrecemos servicio express con la misma calidad y cuidado de siempre.",
-  },
-  {
     icon: MapPin,
     title: "Mudanzas al Interior",
     description: "Realizamos mudanzas a todo el país. Larga distancia con seguimiento en tiempo real.",
