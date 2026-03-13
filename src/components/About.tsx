@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
-  "Más de 20 años de trayectoria en el rubro",
+  "Más de 30 años de trayectoria en el rubro",
   "Personal capacitado y uniformado",
   "Flota propia de camiones equipados",
   "Seguro integral en todas las mudanzas",
@@ -47,7 +47,7 @@ const About = () => {
                 <p className="text-muted-foreground mt-2">Mudanzas</p>
               </div>
               <div className="text-center">
-                <span className="text-4xl md:text-5xl font-display text-gradient-brand">20+</span>
+                <span className="text-4xl md:text-5xl font-display text-gradient-brand">30+</span>
                 <p className="text-muted-foreground mt-2">Años</p>
               </div>
             </div>

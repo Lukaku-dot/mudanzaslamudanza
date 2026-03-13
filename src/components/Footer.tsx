@@ -54,9 +54,9 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-primary" />
                 4637-5500
               </a>
-              <a href="mailto:info@mudarme.com.ar" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+              <a href="mailto:Lamudanzamudanzas@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Mail className="w-4 h-4 text-primary" />
-                info@mudarme.com.ar
+                Lamudanzamudanzas@gmail.com
               </a>
               <div className="flex items-center gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-muted-foreground text-sm">
-          <p>© {new Date().getFullYear()} Mudarme. Todos los derechos reservados. | mudarme.com.ar</p>
+          <p>© 2026 La Mudanza. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

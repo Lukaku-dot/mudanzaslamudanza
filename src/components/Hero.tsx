@@ -23,10 +23,10 @@ const Hero = () => {
           </p>
           <h1 className="font-display text-4xl sm:text-5xl md:text-7xl leading-tight mb-6 animate-slide-up">
             Mudanzas Profesionales y Guardamuebles con{" "}
-            <span className="text-gradient-brand">20 años de trayectoria</span>
+            <span className="text-gradient-brand">+30 años de trayectoria</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            Más de 20 años de experiencia trasladando hogares y empresas con cuidado, eficiencia y puntualidad en Capital Federal y todo Buenos Aires.
+            Más de 30 años de experiencia trasladando hogares y empresas con cuidado, eficiencia y puntualidad en Capital Federal y todo Buenos Aires. Presupuesto sin compromiso y sin cargo.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "0.4s" }}>
@@ -55,7 +55,7 @@ const Hero = () => {
               <p className="text-sm mt-1">Mudanzas realizadas</p>
             </div>
             <div>
-              <span className="text-3xl font-display text-primary">20+</span>
+              <span className="text-3xl font-display text-primary">30+</span>
               <p className="text-sm mt-1">Años de experiencia</p>
             </div>
             <div>
