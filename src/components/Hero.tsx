@@ -1,17 +1,27 @@
 import { Phone, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/hero-mudanza.jpg";
+import heroWebp from "@/assets/hero-mudanza.jpg?format=webp&quality=80";
+import heroWebpMobile from "@/assets/hero-mudanza.jpg?format=webp&w=768&quality=70";
+import heroFallback from "@/assets/hero-mudanza.jpg";
 
 const Hero = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
-          src={heroImg}
-          alt="Camión de mudanza de La Mudanza en Buenos Aires"
-          className="w-full h-full object-cover rounded-b-3xl"
-          loading="eager"
-        />
+        <picture>
+          <source media="(max-width: 768px)" srcSet={heroWebpMobile} type="image/webp" />
+          <source srcSet={heroWebp} type="image/webp" />
+          <img
+            src={heroFallback}
+            alt="Camión de mudanza de La Mudanza en Buenos Aires"
+            className="w-full h-full object-cover rounded-b-3xl"
+            loading="eager"
+            fetchPriority="high"
+            width={1920}
+            height={1080}
+            decoding="async"
+          />
+        </picture>
         <div className="absolute inset-0 bg-background/80" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
       </div>
