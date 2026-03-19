@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo-lamudanza.jpeg";
+import logo from "@/assets/logo-lamudanza.jpeg?format=webp&w=128&quality=80";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
