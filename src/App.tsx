@@ -6,6 +6,16 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import Guardamuebles from "./pages/Guardamuebles.tsx";
+import MudanzasNunez from './pages/MudanzasNunez.tsx';
+import MudanzasAlmagro from './pages/MudanzasAlmagro.tsx';
+import MudanzasSanTelmo from './pages/MudanzasSanTelmo.tsx';
+import MudanzasDevoto from './pages/MudanzasDevoto.tsx';
+import MudanzasLomasZamora from './pages/MudanzasLomasZamora.tsx';
+import MudanzasQuilmes from './pages/MudanzasQuilmes.tsx';
+import MudanzasAvellaneda from './pages/MudanzasAvellaneda.tsx';
+import MudanzasMoron from './pages/MudanzasMoron.tsx';
+import MudanzasTigre from './pages/MudanzasTigre.tsx';
+import MudanzasLaMatanza from './pages/MudanzasLaMatanza.tsx';
 import MudanzasPalermo from './pages/MudanzasPalermo.tsx';
 import MudanzasBelgrano from './pages/MudanzasBelgrano.tsx';
 import MudanzasCaballito from './pages/MudanzasCaballito.tsx';
@@ -28,6 +38,16 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/guardamuebles" element={<Guardamuebles />} />
+            <Route path="/mudanzas-nunez" element={<MudanzasNunez />} />
+            <Route path="/mudanzas-almagro" element={<MudanzasAlmagro />} />
+            <Route path="/mudanzas-san-telmo" element={<MudanzasSanTelmo />} />
+            <Route path="/mudanzas-villa-devoto" element={<MudanzasDevoto />} />
+            <Route path="/mudanzas-lomas-de-zamora" element={<MudanzasLomasZamora />} />
+            <Route path="/mudanzas-quilmes" element={<MudanzasQuilmes />} />
+            <Route path="/mudanzas-avellaneda" element={<MudanzasAvellaneda />} />
+            <Route path="/mudanzas-moron" element={<MudanzasMoron />} />
+            <Route path="/mudanzas-tigre" element={<MudanzasTigre />} />
+            <Route path="/mudanzas-la-matanza" element={<MudanzasLaMatanza />} />
             <Route path='/mudanzas-palermo' element={<MudanzasPalermo />} />
             <Route path='/mudanzas-belgrano' element={<MudanzasBelgrano />} />
             <Route path='/mudanzas-caballito' element={<MudanzasCaballito />} />
