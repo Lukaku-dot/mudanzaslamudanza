@@ -1,3 +1,9 @@
 import ZonaPage from "./ZonaTemplate";
-const MudanzasBelgrano = () => <ZonaPage zona="Belgrano" descripcion="Mudanzas en Belgrano, Núñez y Colegiales. Servicio profesional en uno de los barrios más demandados de CABA." slug="belgrano" />;
+const MudanzasBelgrano = () => <ZonaPage
+  zona="Belgrano"
+  slug="belgrano"
+  descripcion="Mudanzas en Belgrano, Nunez y Colegiales. Especialistas en torres de departamentos y casas de familia en uno de los barrios mas demandados de CABA."
+  contenido="Belgrano concentra algunos de los edificios mas altos de CABA y una gran variedad de viviendas familiares. La logistica de una mudanza en Belgrano requiere conocer los accesos a los edificios sobre Libertador, Cabildo y Monroe, donde el trafico y el estacionamiento son un desafio constante. En La Mudanza gestionamos los permisos de carga y descarga y coordinamos con los porteros para que todo fluya sin inconvenientes. Mas de 30 anos mudando familias en Belgrano nos dan la experiencia para resolver cualquier situacion."
+  faqs={[{"q": "Cuanto tarda una mudanza en Belgrano?", "a": "Una mudanza de 2 a 3 ambientes en Belgrano demora entre 4 y 8 horas dependiendo del piso, el volumen y si se incluye embalaje. Te damos un tiempo estimado cuando hacemos el presupuesto."}, {"q": "Pueden gestionar el permiso de carga en Belgrano?", "a": "Si, nos encargamos de coordinar con la administracion del edificio y gestionar los permisos necesarios para la carga y descarga en Belgrano."}, {"q": "Hacen mudanzas en los edificios sobre Libertador?", "a": "Si, tenemos experiencia en los edificios sobre Libertador y todas las arterias principales de Belgrano. Conocemos los accesos y restricciones de cada zona."}, {"q": "Trabajan en Belgrano C y Belgrano R?", "a": "Si, cubrimos todo Belgrano incluyendo Belgrano C, Belgrano R y la zona de Barrancas. Cada sector tiene sus particularidades y las conocemos bien."}]}
+/>;
 export default MudanzasBelgrano;

@@ -1,3 +1,9 @@
 import ZonaPage from "./ZonaTemplate";
-const MudanzasPalermo = () => <ZonaPage zona="Palermo" descripcion="Mudanzas en Palermo, Villa Crespo y Palermo Soho. Expertos en edificios con y sin ascensor, cocheras y calles angostas del barrio." slug="palermo" />;
+const MudanzasPalermo = () => <ZonaPage
+  zona="Palermo"
+  slug="palermo"
+  descripcion="Mudanzas en Palermo, Villa Crespo y Palermo Soho. Expertos en edificios con ascensor, cocheras y las calles angostas del barrio mas trendy de Buenos Aires."
+  contenido="Palermo es uno de los barrios con mayor movimiento de mudanzas en CABA. Sus edificios modernos, PHs con terrazas y casas de epoca requieren un equipo con experiencia real en accesos complejos. En La Mudanza conocemos cada rincon del barrio: sabemos como maniobrar en Gorriti, Honduras y las calles del bajo Palermo. Trabajamos con camiones de distintos tamanos para adaptarnos a cada situacion, y contamos con equipos de izaje para balcones cuando el ascensor no alcanza."
+  faqs={[{"q": "Cuanto cuesta una mudanza en Palermo?", "a": "El precio depende del volumen y los servicios. Un departamento de 2 ambientes en Palermo puede costar entre $80.000 y $150.000 segun la accesibilidad y si incluye embalaje. Pedinos un presupuesto sin cargo por WhatsApp."}, {"q": "Trabajan en edificios sin ascensor en Palermo?", "a": "Si, tenemos amplia experiencia en edificios sin ascensor en Palermo. Contamos con personal capacitado para escaleras y equipos de izaje para balcones cuando es necesario."}, {"q": "Pueden mudarnos un dia sabado en Palermo?", "a": "Si, trabajamos de lunes a sabado. Para mudanzas en edificios de Palermo los sabados hay que tener en cuenta el horario habilitado por el consorcio, generalmente hasta las 13hs."}, {"q": "Hacen mudanzas de oficinas en Palermo?", "a": "Si, somos especialistas en mudanzas de oficinas y locales comerciales en Palermo. Podemos trabajar fuera del horario comercial para no interrumpir tu actividad."}]}
+/>;
 export default MudanzasPalermo;

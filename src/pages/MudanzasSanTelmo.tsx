@@ -1,3 +1,9 @@
 import ZonaPage from "./ZonaTemplate";
-const MudanzasSanTelmo = () => <ZonaPage zona="San Telmo" descripcion="Mudanzas en San Telmo, La Boca y Constitucion. Expertos en edificios historicos y calles angostas del sur de CABA." slug="san-telmo" />;
+const MudanzasSanTelmo = () => <ZonaPage
+  zona="San Telmo"
+  slug="san-telmo"
+  descripcion="Mudanzas en San Telmo, La Boca y Constitucion. Expertos en el casco historico de Buenos Aires con edificios de epoca y calles adoquinadas."
+  contenido="San Telmo es uno de los barrios mas antiguos e historicos de Buenos Aires, con edificios de principios del siglo XX, inquilinatos reconvertidos y lofts modernos. Sus calles adoquinadas y angostas son un desafio logistico que en La Mudanza resolvemos con camiones del tamano adecuado y personal experimentado. Muchos de nuestros clientes en San Telmo son artistas, diseñadores y profesionales que valoran la atencion al detalle tanto como nosotros."
+  faqs={[{"q": "Como manejan las calles angostas de San Telmo?", "a": "Usamos camiones de tamano apropiado para las calles adoquinadas de San Telmo. Conocemos los accesos y sabemos como posicionar el vehiculo para minimizar el tiempo de carga."}, {"q": "Pueden mudarnos desde un loft en San Telmo?", "a": "Si, tenemos experiencia en mudanzas de lofts en San Telmo. Los lofts suelen tener escaleras industriales y espacios abiertos que requieren tecnicas especificas de traslado."}, {"q": "Trabajan en La Boca y Barracas?", "a": "Si, ademas de San Telmo cubrimos La Boca, Barracas y Constitucion. Son barrios con mucha actividad de mudanzas que atendemos regularmente."}, {"q": "Cuanto cuesta mudarse en San Telmo?", "a": "Una mudanza de 2 ambientes en San Telmo cuesta entre $80.000 y $140.000. Los edificios historicos sin ascensor pueden sumar costo adicional por escalera."}]}
+/>;
 export default MudanzasSanTelmo;
