@@ -114,72 +114,72 @@ const ZonaPage = ({ zona, descripcion, slug, faqs = [] }: ZonaPageProps) => {
           </div>
         </section>
 
-        <section className="py-16 px-4 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-center">Empresa de mudanzas en {zona}</h2>
-          <p className="text-gray-600 text-lg mb-4 text-center">
+        <section className="py-16 px-4 max-w-4xl mx-auto bg-black text-white">
+          <h2 className="text-3xl font-bold mb-4 text-center text-white">Empresa de mudanzas en {zona}</h2>
+          <p className="text-gray-300 text-lg mb-4 text-center">
             En La Mudanza somos especialistas en mudanzas en {zona} con mas de 30 anos de experiencia en Capital Federal y Gran Buenos Aires. 
             Nuestro equipo profesional se encarga de cada detalle para que tu mudanza sea rapida, segura y sin estres.
           </p>
-          <p className="text-gray-600 text-lg text-center">
+          <p className="text-gray-300 text-lg text-center">
             Ya sea que te mudes dentro de {zona} o desde otro barrio, contamos con camiones de distintos tamanos, 
             personal capacitado y todos los materiales de embalaje necesarios. Presupuesto sin cargo y sin compromiso.
           </p>
         </section>
 
-        <section className="bg-gray-50 py-16 px-4">
+        <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Nuestros servicios en {zona}</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-white">Nuestros servicios en {zona}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {servicios.map(s => (
-                <div key={s} className="bg-white border rounded-lg p-6">
-                  <h3 className="font-bold text-lg mb-2">{s}</h3>
-                  <p className="text-gray-600">Servicio profesional de {s.toLowerCase()} en {zona} con mas de 30 anos de experiencia. Personal capacitado y equipamiento de primera calidad.</p>
+                <div key={s} className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
+                  <h3 className="font-bold text-lg mb-2 text-white">{s}</h3>
+                  <p className="text-gray-400">Servicio profesional de {s.toLowerCase()} en {zona} con mas de 30 anos de experiencia. Personal capacitado y equipamiento de primera calidad.</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-16 px-4 max-w-4xl mx-auto">
+        <section className="py-16 px-4 max-w-4xl mx-auto bg-black text-white">
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Por que elegirnos en {zona}</h2>
-            <p className="text-gray-600 mb-8">Somos la empresa de mudanzas de confianza en {zona} y toda la Ciudad de Buenos Aires.</p>
+            <p className="text-gray-300 mb-8">Somos la empresa de mudanzas de confianza en {zona} y toda la Ciudad de Buenos Aires.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <div className="p-6 border rounded-lg">
+              <div className="p-6 border border-zinc-700 rounded-lg bg-zinc-800">
                 <p className="text-4xl font-bold text-orange-500">30</p>
-                <p className="font-bold mt-2">Anos de experiencia</p>
-                <p className="text-gray-600 text-sm mt-1">Empresa familiar con trayectoria comprobada en {zona}</p>
+                <p className="font-bold mt-2 text-white">Anos de experiencia</p>
+                <p className="text-gray-400 text-sm mt-1">Empresa familiar con trayectoria comprobada en {zona}</p>
               </div>
-              <div className="p-6 border rounded-lg">
+              <div className="p-6 border border-zinc-700 rounded-lg bg-zinc-800">
                 <p className="text-4xl font-bold text-orange-500">5.0</p>
-                <p className="font-bold mt-2">Calificacion Google</p>
-                <p className="text-gray-600 text-sm mt-1">Mas de 150 resenas de clientes satisfechos</p>
+                <p className="font-bold mt-2 text-white">Calificacion Google</p>
+                <p className="text-gray-400 text-sm mt-1">Mas de 150 resenas de clientes satisfechos</p>
               </div>
-              <div className="p-6 border rounded-lg">
+              <div className="p-6 border border-zinc-700 rounded-lg bg-zinc-800">
                 <p className="text-4xl font-bold text-orange-500">5000</p>
-                <p className="font-bold mt-2">Clientes satisfechos</p>
-                <p className="text-gray-600 text-sm mt-1">Miles de mudanzas realizadas en {zona} y CABA</p>
+                <p className="font-bold mt-2 text-white">Clientes satisfechos</p>
+                <p className="text-gray-400 text-sm mt-1">Miles de mudanzas realizadas en {zona} y CABA</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-gray-50 py-16 px-4">
+        <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Preguntas frecuentes sobre mudanzas en {zona}</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-white">Preguntas frecuentes sobre mudanzas en {zona}</h2>
             <div className="space-y-4">
               {allFaqs.map((faq, i) => (
-                <div key={i} className="bg-white border rounded-lg p-6">
-                  <h3 className="font-bold text-lg mb-2">{faq.q}</h3>
-                  <p className="text-gray-600">{faq.a}</p>
+                <div key={i} className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
+                  <h3 className="font-bold text-lg mb-2 text-white">{faq.q}</h3>
+                  <p className="text-gray-400">{faq.a}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-16 px-4 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Tambien hacemos mudanzas en</h2>
+        <section className="py-16 px-4 max-w-4xl mx-auto bg-black text-white">
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Tambien hacemos mudanzas en</h2>
           <div className="flex flex-wrap gap-3 justify-center">
             {zonas.filter(z => z.slug !== slug).map(z => (
               <a key={z.slug} href={`/mudanzas-${z.slug}`} className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">
